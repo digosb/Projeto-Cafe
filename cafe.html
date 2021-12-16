@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+
+        <section>
+            <h1>Faça a sua escolha...</h1>
+            <hr>
+            <br>
+            <h2>Açucar</h2>
+            <ol>
+                <li> <input type="radio" name="acucar" checked> Sem açucar </li>
+                <li> <input type="radio" name="acucar"> Pouco açucar</li>
+                <li> <input type="radio" name="acucar"> Açucar médio</li>
+                <li> <input type="radio" name="acucar"> Muito açucar</li>
+            </ol>
+        </section> <br>
+
+        <div>
+            <section>
+                <h2>Café</h2>
+                <ol>
+                    <li> <input type="radio" name="cafe"> café curto </li>
+                    <li> <input type="radio" name="cafe"> café longo </li>
+                    <li> <input type="radio" name="cafe"> café preto </li>
+                    <li> <input type="radio" name="cafe"> capuccino </li>
+                    <li> <input type="radio" name="cafe"> mocaccino </li>
+                    <li> <input type="radio" name="cafe"> chocolate </li>
+                </ol> <br>
+
+                <button onclick="exibir()">Preparar</button><br>
+                <br>
+                <div id="msg">
+                    <p>Aguardando...</p>
+                </div><br>
+                <div id="preparar">
+                    <p hidden>Escolhido...</p>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="interacao.js"></script>
+</body>
+
+</html>
